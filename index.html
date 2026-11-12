@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta name="robots" content="noindex, nofollow">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MAISON MILIA | Streetwear premium, Lyon</title>
@@ -9,11 +8,16 @@
 <meta property="og:title" content="MAISON MILIA, streetwear premium à Lyon">
 <meta property="og:description" content="Collection en précommande. Ensembles, t-shirts oversize, half-zip organza.">
 <meta property="og:locale" content="fr_FR">
+<link rel="canonical" href="https://maisonmilia.com/">
+<meta property="og:url" content="https://maisonmilia.com/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://maisonmilia.com/img/pink.jpg">
+<link rel="icon" type="image/png" href="img/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;700&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ClothingStore","name":"Maison Milia","alternateName":"Maison Milia Clothing Co.","address":{"@type":"PostalAddress","addressLocality":"Lyon","addressCountry":"FR"},"email":"maisonmilia@hotmail.com","telephone":"+33760005629","sameAs":["https://www.instagram.com/maisonmilia.co/"],"priceRange":"40 € - 99 €"}
+{"@context":"https://schema.org","@type":"ClothingStore","name":"Maison Milia","url":"https://maisonmilia.com/","alternateName":"Maison Milia Clothing Co.","address":{"@type":"PostalAddress","addressLocality":"Lyon","addressCountry":"FR"},"email":"maisonmilia@hotmail.com","telephone":"+33760005629","sameAs":["https://www.instagram.com/maisonmilia.co/"],"priceRange":"40 € - 99 €"}
 </script>
 <style>
 /*
@@ -779,15 +783,9 @@ dialog h2 { font-size: 22px; padding-right: 48px; margin-bottom: 10px; }
 <!-- ================= COMMANDE ================= -->
 <div data-view="commande" hidden>
   <div class="wrap">
-    <div class="page-head"><h1 class="page-title">Commande</h1><p class="muted">Sans création de compte. Paiement sécurisé.</p></div>
+    <div class="page-head"><h1 class="page-title">Commande</h1><p class="muted">Sans création de compte. Ta précommande est confirmée avec toi sur WhatsApp.</p></div>
     <div class="checkout">
       <form class="co-form" id="co-form" novalidate>
-        <div class="express" aria-label="Paiement express">
-          <button type="button" data-express>Apple Pay</button>
-          <button type="button" data-express>Google Pay</button>
-          <button type="button" data-express>PayPal</button>
-        </div>
-        <p class="or">ou par carte bancaire</p>
         <fieldset>
           <legend>Contact</legend>
           <div class="field"><label for="co-email">Email</label><input class="input" id="co-email" type="email" autocomplete="email" required><span class="hint">Pour la confirmation et le suivi.</span></div>
@@ -809,11 +807,11 @@ dialog h2 { font-size: 22px; padding-right: 48px; margin-bottom: 10px; }
             <div class="field"><label for="co-city">Ville</label><input class="input" id="co-city" autocomplete="address-level2" required></div>
           </div>
         </fieldset>
-        <div class="pre-box"><strong>Ta commande est une précommande</strong><span>Expédition prévue : <span data-ship></span>. Tu paies maintenant, ta taille est réservée.</span></div>
+        <div class="pre-box"><strong>Ta commande est une précommande</strong><span>Expédition prévue : <span data-ship></span>. Tu envoies ta précommande sur WhatsApp, on te confirme la commande et le paiement, puis ta taille est réservée.</span></div>
         <label class="check" style="font-size:14px"><input type="checkbox" id="co-pre" required> J'ai compris que c'est une précommande, expédiée à partir de : <span data-ship></span>.</label>
         <label class="check" style="font-size:14px"><input type="checkbox" id="co-cgv" required> J'accepte les <a href="#cgv">conditions générales de vente</a>.</label>
         <p class="err" id="co-err" role="alert" hidden></p>
-        <button class="btn block" type="submit" id="co-submit">Payer la précommande</button>
+        <button class="btn block" type="submit" id="co-submit">Envoyer ma précommande sur WhatsApp</button>
         <div class="done" id="co-done" role="status" hidden></div>
       </form>
       <aside class="summary" aria-labelledby="sum-title">
@@ -822,7 +820,7 @@ dialog h2 { font-size: 22px; padding-right: 48px; margin-bottom: 10px; }
         <div class="sum-row"><span>Sous-total</span><span class="mono" id="sum-sub">0 €</span></div>
         <div class="sum-row"><span>Livraison</span><span class="mono" id="sum-ship">—</span></div>
         <div class="sum-row total"><span>Total TTC</span><span class="mono" id="sum-total">0 €</span></div>
-        <p class="hint">Paiement par carte (Stripe), PayPal, Apple Pay ou Google Pay. Aucun frais ajouté après cette étape.</p>
+        <p class="hint">Aucun paiement sur cette page. On te confirme le total et le moyen de paiement sur WhatsApp.</p>
       </aside>
     </div>
   </div>
@@ -832,7 +830,7 @@ dialog h2 { font-size: 22px; padding-right: 48px; margin-bottom: 10px; }
 <div data-view="mentions" hidden><div class="wrap"><div class="page-head"><h1 class="page-title">Mentions légales</h1></div><div class="prose">
   <h2>Éditeur du site</h2><p>Maison Milia, entreprise individuelle (auto-entrepreneur) de <span class="todo">nom et prénom</span>. Adresse : 249 rue de la Convention, 38670 Chasse-sur-Rhône, France. SIRET : 981 497 688 00029.</p>
   <p>Directeur de la publication : <span class="todo">nom et prénom</span>. Contact : maisonmilia@hotmail.com, +33 7 60 00 56 29.</p>
-  <h2>Hébergeur</h2><p>Shopify International Limited, Victoria Buildings, 2e étage, 1-2 Haddington Road, Dublin 4, D04 XN32, Irlande.</p>
+  <h2>Hébergeur</h2><p>GitHub, Inc. (GitHub Pages), 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis.</p>
   <h2>Propriété intellectuelle</h2><p>Le nom Maison Milia, le monogramme MM, les photos et les textes du site appartiennent à Maison Milia. Toute reproduction sans autorisation est interdite.</p>
 </div></div></div>
 
@@ -840,7 +838,7 @@ dialog h2 { font-size: 22px; padding-right: 48px; margin-bottom: 10px; }
   <h2>1. Objet</h2><p>Les présentes conditions encadrent les ventes en ligne de Maison Milia Clothing Co. aux consommateurs.</p>
   <h2>2. Prix</h2><p>Les prix sont indiqués en euros, toutes taxes comprises. Les frais de livraison sont affichés avant le paiement.</p>
   <h2>3. Précommande</h2><p>Les pièces de la collection sont vendues en précommande. La date d'expédition prévue est indiquée sur la fiche produit et rappelée par email.</p>
-  <h2>4. Paiement</h2><p>Carte bancaire (Stripe), PayPal, Apple Pay, Google Pay.</p>
+  <h2>4. Commande et paiement</h2><p>La précommande est envoyée par WhatsApp depuis le site. Maison Milia confirme la commande, le total et le moyen de paiement. La commande est validée à réception du paiement.</p>
   <h2>5. Livraison</h2><p>Colissimo ou Mondial Relay. Expédition sous 7 jours ouvrables. Livraison offerte dès 80 € d'achat.</p>
   <h2>6. Droit de rétractation</h2><p>Tu disposes de 14 jours à compter de la réception pour te rétracter, sans motif (art. L221-18 du Code de la consommation). Le remboursement intervient au plus tard 14 jours après la rétractation, par le même moyen de paiement.</p>
   <h2>7. Garanties</h2><p>Les produits bénéficient de la garantie légale de conformité (art. L217-3 et suivants) et de la garantie des vices cachés (art. 1641 et suivants du Code civil).</p>
@@ -1202,17 +1200,28 @@ dialog h2 { font-size: 22px; padding-right: 48px; margin-bottom: 10px; }
     var orders = store.get("mm-orders", []);
     orders.unshift({ n: "MM-" + String(1001 + orders.length), at: new Date().toISOString(), name: ($("co-first").value + " " + $("co-last").value).trim(), email: $("co-email").value.trim(), tel: $("co-tel").value.trim(), items: cart.map(function (l) { return { name: l.name, col: l.colour || l.col, size: l.size, qty: l.qty, price: l.price }; }), total: subtotal() + shipCost() });
     store.set("mm-orders", orders.slice(0, 200));
-    var d = $("co-done"); d.textContent = "Démo : tout est bon. Sur le vrai site, le paiement s'ouvre ici, puis un email confirme la précommande et la date d'expédition (" + shipTxt() + ")."; d.hidden = false;
+    var lines = cart.map(function (l) { return "- " + l.qty + " x " + l.name + " (" + (l.colour || l.col) + ", taille " + l.size + ") : " + euro(l.price * l.qty); });
+    var shipLabel = ($$('input[name="ship"]:checked')[0] || {}).value === "relay" ? "Mondial Relay (point relais)" : "Colissimo à domicile";
+    var msg = "Bonjour Maison Milia, je souhaite précommander :\n" + lines.join("\n") +
+      "\n\nSous-total : " + euro(subtotal()) + "\nLivraison : " + shipLabel + (shipCost() === 0 ? " (offerte)" : "") +
+      "\n\nNom : " + ($("co-first").value + " " + $("co-last").value).trim() + "\nEmail : " + $("co-email").value.trim() + "\nTéléphone : " + $("co-tel").value.trim() +
+      "\nAdresse : " + $("co-addr").value.trim() + ", " + $("co-zip").value.trim() + " " + $("co-city").value.trim();
+    var url = "https://wa.me/33760005629?text=" + encodeURIComponent(msg);
+    var d = $("co-done"); d.innerHTML = 'Ta précommande est prête. Si WhatsApp ne s\'est pas ouvert, <a class="textlink" href="' + url + '" target="_blank" rel="noopener">clique ici pour l\'envoyer</a>. On te répond rapidement pour confirmer le paiement.'; d.hidden = false;
+    try { window.open(url, "_blank", "noopener"); } catch (x) {}
   });
-  $$("[data-express]").forEach(function (b) { b.addEventListener("click", function () { var d = $("co-done"); d.textContent = "Démo : " + b.textContent + " sera activé à la mise en ligne."; d.hidden = false; }); });
 
   /* ---------- Demo forms ---------- */
   $$("[data-demo-form]").forEach(function (f) {
     f.addEventListener("submit", function (e) {
       e.preventDefault();
       var bad = $$("input, textarea", f).filter(function (i) { if (!i.required) return false; var ok = i.checkValidity() && i.value.trim(); i.setAttribute("aria-invalid", String(!ok)); return !ok; });
-      f.querySelector(".msg").textContent = bad.length ? (bad[0].type === "email" ? "Vérifie ton email, par exemple prenom@email.com." : "Complète les champs entourés en rose.") : "Démo : ce formulaire sera branché à la mise en ligne.";
-      if (bad.length) bad[0].focus();
+      if (bad.length) { f.querySelector(".msg").textContent = bad[0].type === "email" ? "Vérifie ton email, par exemple prenom@email.com." : "Complète les champs entourés en rose."; bad[0].focus(); return; }
+      var parts = $$("input, textarea", f).filter(function (i) { return i.value.trim() && i.type !== "checkbox"; }).map(function (i) { var l = f.querySelector('label[for="' + i.id + '"]'); return (l ? l.textContent.trim() : i.name) + " : " + i.value.trim(); });
+      var intro = f.querySelector('textarea') ? "Bonjour Maison Milia, j'ai une question." : "Bonjour Maison Milia, je veux être prévenu des nouvelles pièces.";
+      var url = "https://wa.me/33760005629?text=" + encodeURIComponent(intro + "\n" + parts.join("\n"));
+      f.querySelector(".msg").innerHTML = 'C\'est prêt. Si WhatsApp ne s\'est pas ouvert, <a class="textlink" href="' + url + '" target="_blank" rel="noopener">clique ici pour envoyer</a>.';
+      try { window.open(url, "_blank", "noopener"); } catch (x) {}
     });
   });
 
